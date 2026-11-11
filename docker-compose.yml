@@ -1,0 +1,15 @@
+# One container: Postgres 17. The CLI runs on the host and connects to 127.0.0.1:55432.
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-dropzone}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-dropzone}
+      POSTGRES_DB: dropzone
+    ports:
+      - "127.0.0.1:55432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U dropzone -d dropzone"]
+      interval: 2s
+      timeout: 2s
+      retries: 30

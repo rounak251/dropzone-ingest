@@ -1,0 +1,46 @@
+# Data contract for order drops. Read with stdlib tomllib by dropzone/contract.py.
+# Both CSV and JSONL drops must use exactly these column names.
+
+[contract]
+name = "orders"
+natural_key = "order_id"
+
+[[columns]]
+name = "order_id"
+type = "text"
+required = true
+
+[[columns]]
+name = "customer_id"
+type = "text"
+required = true
+
+[[columns]]
+name = "sku"
+type = "text"
+required = true
+
+[[columns]]
+name = "quantity"
+type = "int"
+required = true
+min = 1
+max = 1000
+
+[[columns]]
+name = "unit_price_cents"
+type = "int"
+required = true
+min = 0
+max = 1000000
+
+[[columns]]
+name = "order_date"
+type = "date"
+required = true
+
+[[columns]]
+name = "status"
+type = "text"
+required = true
+allowed = ["placed", "shipped", "cancelled"]

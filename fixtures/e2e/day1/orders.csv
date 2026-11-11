@@ -1,0 +1,15 @@
+order_id,customer_id,sku,quantity,unit_price_cents,order_date,status
+O-1001,C-1,SKU-A,2,1500,2026-10-01,placed
+O-1002,C-2,SKU-B,1,2500,2026-10-01,shipped
+O-1003,C-3,SKU-A,0,1500,2026-10-02,placed
+O-1004,C-1,SKU-C,3,999,2026-10-02,lost
+O-1005,C-4,SKU-B,1,-5,2026-10-02,placed
+O-1006,C-5,SKU-D,2,400,2026-13-01,placed
+O-1007,C-6,,1,100,2026-10-03,placed
+O-1008,C-7,SKU-A,1,1000,2026-10-03,placed,extra
+O-1009,C-8,SKU-E,4,"1200",2026-10-03,cancelled
+O-1002,C-2,SKU-B,1,2500,2026-10-01,shipped
+O-1010,C-9,SKU-A,5,abc,2026-10-04,placed
+
+O-1011, C-10 ,SKU-B,2,2000,2026-10-04,placed
+O-1002,C-2,SKU-B,1,2600,2026-10-01,shipped

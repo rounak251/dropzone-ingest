@@ -1,0 +1,70 @@
+# idle: docker stats --no-stream, captured 2026-11-04T08:36:29Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+610505b9d7b9   dropzone-ingest-postgres-1   0.24%     93.31MiB / 7.748GiB   1.18%     414MB / 370MB   0B / 1.73GB   6
+
+# Docker VM memory (bytes):
+8319770624
+
+# under load: make drill N=50 running at run 15: docker stats --no-stream, captured 2026-11-04T08:37:08Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+610505b9d7b9   dropzone-ingest-postgres-1   36.52%    100.6MiB / 7.748GiB   1.27%     543MB / 483MB   0B / 2.14GB   7
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50, sample 1 (during run): docker stats --no-stream, captured 2026-11-04T14:00:43Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+6a652396a45b   dropzone-ingest-postgres-1   44.28%    125.6MiB / 7.748GiB   1.58%     164MB / 134MB   0B / 1.21GB   6
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50 second run, sample 1 (drill running; progress not recorded, because the drill log was buffered): docker stats --no-stream, captured 2026-11-04T14:03:21Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+6a652396a45b   dropzone-ingest-postgres-1   30.93%    143.1MiB / 7.748GiB   1.80%     509MB / 444MB   0B / 2.32GB   7
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50 second run, sample 2 (drill running; progress not recorded, because the drill log was buffered): docker stats --no-stream, captured 2026-11-04T14:03:38Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O    PIDS
+6a652396a45b   dropzone-ingest-postgres-1   32.25%    143.6MiB / 7.748GiB   1.81%     571MB / 495MB   0B / 2.5GB   6
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50 second run, sample 3 (drill running; progress not recorded, because the drill log was buffered): docker stats --no-stream, captured 2026-11-04T14:03:56Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+6a652396a45b   dropzone-ingest-postgres-1   39.18%    149.1MiB / 7.748GiB   1.88%     629MB / 549MB   0B / 2.69GB   7
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50 second run, sample 4 (drill running; progress not recorded, because the drill log was buffered): docker stats --no-stream, captured 2026-11-04T14:04:14Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O    PIDS
+6a652396a45b   dropzone-ingest-postgres-1   43.32%    135.8MiB / 7.748GiB   1.71%     689MB / 599MB   0B / 2.8GB   6
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50 second run, sample 5 (drill running; progress not recorded, because the drill log was buffered): docker stats --no-stream, captured 2026-11-04T14:04:32Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+6a652396a45b   dropzone-ingest-postgres-1   20.44%    138.9MiB / 7.748GiB   1.75%     746MB / 652MB   0B / 2.89GB   7
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50 second run, sample 6 (drill running; progress not recorded, because the drill log was buffered): docker stats --no-stream, captured 2026-11-04T14:04:54Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT     MEM %     NET I/O         BLOCK I/O     PIDS
+6a652396a45b   dropzone-ingest-postgres-1   52.94%    138.2MiB / 7.748GiB   1.74%     807MB / 702MB   0B / 2.99GB   7
+
+# Docker VM memory (bytes):
+8319770624
+
+# drill N=50 second run, sample 7 (drill running; progress not recorded, because the drill log was buffered): docker stats --no-stream, captured 2026-11-04T14:05:12Z
+CONTAINER ID   NAME                         CPU %     MEM USAGE / LIMIT   MEM %     NET I/O         BLOCK I/O     PIDS
+6a652396a45b   dropzone-ingest-postgres-1   42.06%    138MiB / 7.748GiB   1.74%     855MB / 744MB   0B / 3.07GB   7
+
+# Docker VM memory (bytes):
+8319770624
+
